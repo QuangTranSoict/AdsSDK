@@ -20,12 +20,13 @@ let package = Package(
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git", exact: "8.1.1"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "7.9.0-release.8"),
         .package(url: "https://github.com/moloco/moloco-sdk-ios-spm.git", exact: "4.6.0"),
+        .package(url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git", branch: "main"),
     ],
     targets: [
         .binaryTarget(
             name: "AdsSDK",
-            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.7/AdsSDK.xcframework.zip",
-            checksum: "0c96494fe57b31b9dc0383472ed9890bd0276ecbe3ea60f828786f82adea46d9"
+            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.8/AdsSDK.xcframework.zip",
+            checksum: "c56702121f53fad267d1867a525cdf7507bc12d3b22dab3801d71615709ca955"
         ),
         .target(
             name: "AdsSDKPackageSupport",
@@ -38,6 +39,7 @@ let package = Package(
                 .product(name: "MintegralAdSDK", package: "mintegraladsdk-swift-package"),
                 .product(name: "AdsGlobalPackage", package: "adsglobalpackage"),
                 .product(name: "MolocoSDK", package: "moloco-sdk-ios-spm"),
+                .product(name: "InMobiAdapterTarget", package: "googleads-mobile-ios-mediation-inmobi"),
             ],
             path: "Sources/AdsSDKPackageSupport"
         ),
