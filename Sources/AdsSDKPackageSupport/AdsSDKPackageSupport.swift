@@ -13,8 +13,16 @@ import GoogleMobileAds
 import MTGSDK
 #endif
 
+#if canImport(MolocoSDK)
+import MolocoSDK
+#endif
+
 #if canImport(PAGAdSDK)
 import PAGAdSDK
+#endif
+
+#if canImport(InMobiAdapter)
+import InMobiAdapter
 #endif
 
 #if canImport(UserMessagingPlatform)
