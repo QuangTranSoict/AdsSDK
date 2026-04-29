@@ -19,12 +19,13 @@ let package = Package(
         .package(url: "https://github.com/Vungle/VungleAdsSDK-SwiftPackageManager.git", exact: "7.7.2"),
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git", exact: "8.1.1"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "7.9.0-release.8"),
+        .package(url: "https://github.com/moloco/moloco-sdk-ios-spm.git", exact: "4.6.0"),
     ],
     targets: [
         .binaryTarget(
             name: "AdsSDK",
-            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.5/AdsSDK.xcframework.zip",
-            checksum: "eb8892cb6be6f1aaa7a648b2063aaae920fc3bc5d1b0135693005a97ced67a6b"
+            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.6/AdsSDK.xcframework.zip",
+            checksum: "f9ab669e8e28cac072cb5de549db26812b3cad8e913b2b5b7f8e813cdfd0ee73"
         ),
         .target(
             name: "AdsSDKPackageSupport",
@@ -36,6 +37,7 @@ let package = Package(
                 .product(name: "VungleAdsSDK", package: "vungleadssdk-swiftpackagemanager"),
                 .product(name: "MintegralAdSDK", package: "mintegraladsdk-swift-package"),
                 .product(name: "AdsGlobalPackage", package: "adsglobalpackage"),
+                .product(name: "MolocoSDK", package: "moloco-sdk-ios-spm"),
             ],
             path: "Sources/AdsSDKPackageSupport"
         ),
