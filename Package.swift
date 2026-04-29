@@ -20,13 +20,13 @@ let package = Package(
         .package(url: "https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package.git", exact: "8.1.1"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "7.9.0-release.8"),
         .package(url: "https://github.com/moloco/moloco-sdk-ios-spm.git", exact: "4.6.0"),
-        .package(url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git", branch: "main"),
+        .package(url: "https://github.com/googleads/googleads-mobile-ios-mediation-inmobi.git", exact: "11.2.000"),
     ],
     targets: [
         .binaryTarget(
             name: "AdsSDK",
-            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.9/AdsSDK.xcframework.zip",
-            checksum: "61b7d0801b6a23ef1c31f3dfeebf37b06a40fe1098e65053eacc61387da8c129"
+            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.10/AdsSDK.xcframework.zip",
+            checksum: "5a918bb3d4b27a75481b360219aacbe62ed528fd53e25501f862dcc4b4679d7e"
         ),
         .target(
             name: "AdsSDKPackageSupport",
