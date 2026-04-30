@@ -25,8 +25,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdsSDK",
-            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.10/AdsSDK.xcframework.zip",
-            checksum: "5a918bb3d4b27a75481b360219aacbe62ed528fd53e25501f862dcc4b4679d7e"
+            url: "https://github.com/QuangTranSoict/AdsSDK/releases/download/1.0.11/AdsSDK.xcframework.zip",
+            checksum: "dd6874049c98965715fa505884cf48d0e1475aa875e3b3649a7e23fd9202d3b4"
         ),
         .target(
             name: "AdsSDKPackageSupport",
